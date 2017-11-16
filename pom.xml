@@ -56,9 +56,14 @@
 	<distributionManagement>
 		<repository>
 			<id>central</id>
-			<name>vm01-releases</name>
+			<name>public-release</name>
 			<url>http://192.168.31.194:8081/artifactory/public-release</url>
 		</repository>
+		<snapshotRepository>  
+            <id>snapshots</id>
+            <name>public-snapshot</name>
+            <url>http://192.168.31.194:8081/artifactory/public-snapshot</url>  
+        </snapshotRepository>
 	</distributionManagement>
 
 </project>
