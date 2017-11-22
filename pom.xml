@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.RELEASE</version>
+		<version>1.5.8.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -41,6 +41,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -56,14 +61,14 @@
 	<distributionManagement>
 		<repository>
 			<id>central</id>
-			<name>public-release</name>
+			<name>vm01-releases</name>
 			<url>http://192.168.31.194:8081/artifactory/public-release</url>
 		</repository>
-		<snapshotRepository>  
-            <id>snapshots</id>
-            <name>public-snapshot</name>
-            <url>http://192.168.31.194:8081/artifactory/public-snapshot</url>  
-        </snapshotRepository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>vm01-snapshots</name>
+			<url>http://192.168.31.194:8081/artifactory/public-snapshot</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 </project>
